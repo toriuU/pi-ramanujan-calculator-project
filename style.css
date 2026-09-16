@@ -1,0 +1,46 @@
+*{
+    font-family: "Arial Rounded MT Bold", "Trebuchet MS", "Comic Sans MS", sans-serif;
+    font-weight: bold;
+}
+
+.mainTab{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    background-color: rgb(165, 211, 255);
+}
+
+#displayPi{
+    background-color: rgb(43, 99, 255);
+    font-size: 50px;
+
+    min-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+#displayPi #displayText{
+    margin: 40px 0;
+}
+
+#buttonMinePi{
+    border: 0px solid white;
+    min-width: 300px;
+    border-radius: 15px;
+    padding: 20px 30px;
+
+    background-color: rgb(118, 154, 255);
+    font-size: 50px;
+    &:hover{
+        background-color: rgb(79, 126, 255);
+        &:active{
+            border: 5px solid white;
+            padding: 15px 25px;
+        }
+    }
+}
