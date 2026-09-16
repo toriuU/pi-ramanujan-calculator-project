@@ -6,6 +6,10 @@ const firstProductFormula = 2*(2**(1/2)) / 9801;
 let Summation;
 let SummationFirstProduct, SummationSecondProduct;
 
+function fatorial(n) {
+    
+}
+
 button.addEventListener("click", () => {
     clicksButton += 1;
     console.log(clicksButton);
