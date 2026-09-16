@@ -7,8 +7,13 @@ let Summation;
 let SummationFirstProduct, SummationSecondProduct;
 
 function fatorial(n) {
-    
-}
+    let result = 1;
+
+    for(let i = 1; i <= n; ++i) {
+        result *= i;
+    };
+    return result;
+};
 
 button.addEventListener("click", () => {
     clicksButton += 1;
