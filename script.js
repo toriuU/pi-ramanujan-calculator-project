@@ -1,9 +1,9 @@
-const button = document.querySelector("#buttonMinePi");
-const display = document.querySelector("#displayPi #displayText");
+let button = document.querySelector("#buttonMinePi");
+let display = document.querySelector("#displayText");
 let clicksButton = 0;
 let valuePi;
 const firstProductFormula = 2*(2**(1/2)) / 9801;
-let formulaProduct = BigInt(0);
+let formulaProduct;
 let summationFirstFactor, summationSecondFactor;
 let summationProduct = 0;
 
@@ -25,4 +25,6 @@ button.addEventListener("click", () => {
         formulaProduct = (1 / (summationProduct * firstProductFormula));
     };
     summationProduct = 0;
+    display.textContent = formulaProduct;
 });
+
